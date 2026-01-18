@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "starter_chosen": {
+            "trigger": "cobblemon:pick_starter"
+        }
+    },
+    "rewards": {
+        "function": "academy_houses:assign/assign"
+    }
+}
