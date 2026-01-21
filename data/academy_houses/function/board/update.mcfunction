@@ -9,3 +9,8 @@ execute as @e[tag=houseBoard,tag=Caradaigle] run data modify entity @s text set 
 execute as @e[tag=houseBoard,tag=Bulbitard] run data modify entity @s text set value '{"text":"🌿 Maison Bulbitard : ","color":"green","bold":true,"extra":[{"score":{"name":"Bulbitard","objective":"housePoints"}}]}'
 
 say UPDATE_OK
+
+function academy_houses:board/update/podium
+function academy_houses:board/update/detailed
+function academy_houses:board/update/compact
+function academy_houses:board/update/leader

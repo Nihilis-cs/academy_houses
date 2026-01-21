@@ -2,7 +2,7 @@
 #Avant d'appeler cette fonction il faut définir le nombre de points à ajouter via:
 #   /scoreboard players set @s houseDelta <nombre_de_points>
 #Et appeler la fonction via:
-#   /function academy_houses:function/board/add_points
+#   /function academy_houses:board/add_points
 
 # Sii le joueur n'a pas de maison, on sort
 execute unless score @s playerHouse matches 0..2 run return 0
