@@ -1,0 +1,1 @@
+advancement grant @a only academy_houses:leaderboard_changed

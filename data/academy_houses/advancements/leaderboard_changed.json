@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "leaderboard_changed": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -21,5 +21,9 @@ execute if score @s playerHouse matches 2 run scoreboard players operation Bulbi
 #On met à jour les affichages
 function academy_houses:board/update
 
+
+#Notifier le changement de classement
+function academy_houses:notifier/leaderboard_changed
+
 # Remise à 0 de houseDelta
 scoreboard players set @s houseDelta 0

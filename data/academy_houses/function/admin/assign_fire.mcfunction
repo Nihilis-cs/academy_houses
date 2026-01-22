@@ -1,5 +1,5 @@
-# Sécurité : uniquement si un joueur est ciblé
-execute unless entity @s run return 0
+# # Sécurité : uniquement si un joueur est ciblé
+# execute unless entity @s run return 0
 
 # Nettoyage anciennes maisons
 tag @s remove Salador

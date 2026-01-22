@@ -1,7 +1,7 @@
 #fonctionne exactement comme board/add_points.mcfunction mais pour un admin
 
-# Sécurité : le joueur doit avoir une maison
-execute unless score @s playerHouse matches 0..2 run return 0
+# # Sécurité : le joueur doit avoir une maison
+# execute unless score @s playerHouse matches 0..2 run return 0
 
 # Salador
 execute if score @s playerHouse matches 0 run scoreboard players operation Salador housePoints += @s houseDelta
