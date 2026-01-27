@@ -1,5 +1,5 @@
-execute as @e[tag=detailed,tag=Salador] run data modify entity @s text set value '{"text":"🔥 Salador : ","color":"red","extra":[{"score":{"name":"Salador","objective":"housePoints"},"color":"gold"},{"text":" pts","color":"yellow"}]}'
+execute as @e[tag=houseBoard,tag=detailed,tag=Salador] run data modify entity @s text set value '{"text":"🔥 Salador ","color":"red","bold":true,"extra":[{"text":"— "},{"score":{"name":"Salador","objective":"housePoints"}},{"text":" pts | Rang "},{"score":{"name":"Salador","objective":"rank"}}]}'
 
-execute as @e[tag=detailed,tag=Caradaigle] run data modify entity @s text set value '{"text":"💧 Caradaigle : ","color":"blue","extra":[{"score":{"name":"Caradaigle","objective":"housePoints"},"color":"gold"},{"text":" pts","color":"yellow"}]}'
+execute as @e[tag=houseBoard,tag=detailed,tag=Caradaigle] run data modify entity @s text set value '{"text":"💧 Caradaigle ","color":"blue","bold":true,"extra":[{"text":"— "},{"score":{"name":"Caradaigle","objective":"housePoints"}},{"text":" pts | Rang "},{"score":{"name":"Caradaigle","objective":"rank"}}]}'
 
-execute as @e[tag=detailed,tag=Bulbitard] run data modify entity @s text set value '{"text":"🌿 Bulbitard : ","color":"green","extra":[{"score":{"name":"Bulbitard","objective":"housePoints"},"color":"gold"},{"text":" pts","color":"yellow"}]}'
+execute as @e[tag=houseBoard,tag=detailed,tag=Bulbitard] run data modify entity @s text set value '{"text":"🌿 Bulbitard ","color":"green","bold":true,"extra":[{"text":"— "},{"score":{"name":"Bulbitard","objective":"housePoints"}},{"text":" pts | Rang "},{"score":{"name":"Bulbitard","objective":"rank"}}]}'

@@ -19,6 +19,8 @@ execute if score @s playerHouse matches 1 run scoreboard players operation Carad
 execute if score @s playerHouse matches 2 run scoreboard players operation Bulbitard housePoints += @s houseDelta
 
 #On met à jour les affichages
+function academy_houses:board/compute_leader
+function academy_houses:board/compute_podium
 function academy_houses:board/update
 
 

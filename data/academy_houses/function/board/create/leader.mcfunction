@@ -1,1 +1,14 @@
-summon text_display ~ ~1.0 ~ {Tags:["houseBoard","leader"],text:'{"text":"👑 Maison dominante : ?","color":"gold","bold":true}',alignment:"center",background:0}
+# Déterminer la direction du joueur
+function academy_houses:util/get_direction
+
+# Créer le board dans la bonne orientation
+execute if entity @s[tag=facing_south] run function academy_houses:board/create/leader_south
+execute if entity @s[tag=facing_west] run function academy_houses:board/create/leader_west
+execute if entity @s[tag=facing_north] run function academy_houses:board/create/leader_north
+execute if entity @s[tag=facing_east] run function academy_houses:board/create/leader_east
+
+# Nettoyer les tags de direction
+tag @s remove facing_south
+tag @s remove facing_west
+tag @s remove facing_north
+tag @s remove facing_east

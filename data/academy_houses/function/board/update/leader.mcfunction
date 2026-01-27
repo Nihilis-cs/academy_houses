@@ -1,1 +1,4 @@
-execute as @e[tag=leader] run data modify entity @s text set value '{"text":"👑 Maison dominante : ","extra":[{"text":"Salador","color":"red"}]}'
+execute as @e[tag=leaderBoard] run data modify entity @s text set value '{"text":"❌","color":"white"}'
+execute as @e[tag=leaderBoard] if score Salador leader matches 1 run data modify entity @s text set value '{"text":"👑 🔥 Salador","color":"gold","bold":true}'
+execute as @e[tag=leaderBoard] if score Caradaigle leader matches 1 run data modify entity @s text set value '{"text":"👑 💧 Caradaigle","color":"gold","bold":true}'
+execute as @e[tag=leaderBoard] if score Bulbitard leader matches 1 run data modify entity @s text set value '{"text":"👑 🌿 Bulbitard","color":"gold","bold":true}'

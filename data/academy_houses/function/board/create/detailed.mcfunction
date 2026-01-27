@@ -1,7 +1,14 @@
-summon text_display ~ ~2.1 ~ {Tags:["houseBoard","detailed","title"],text:'{"text":"📜 Registre Officiel de l’Académie","color":"gold","italic":true}',alignment:"center",background:0}
+# Déterminer la direction du joueur
+function academy_houses:util/get_direction
 
-summon text_display ~ ~1.7 ~ {Tags:["houseBoard","detailed","Salador"],text:'{"text":"🔥 Salador","color":"red","bold":true}',alignment:"center",background:0}
+# Créer le board dans la bonne orientation
+execute if entity @s[tag=facing_south] run function academy_houses:board/create/detailed_south
+execute if entity @s[tag=facing_west] run function academy_houses:board/create/detailed_west
+execute if entity @s[tag=facing_north] run function academy_houses:board/create/detailed_north
+execute if entity @s[tag=facing_east] run function academy_houses:board/create/detailed_east
 
-summon text_display ~ ~1.4 ~ {Tags:["houseBoard","detailed","Caradaigle"],text:'{"text":"💧 Caradaigle","color":"blue","bold":true}',alignment:"center",background:0}
-
-summon text_display ~ ~1.1 ~ {Tags:["houseBoard","detailed","Bulbitard"],text:'{"text":"🌿 Bulbitard","color":"green","bold":true}',alignment:"center",background:0}
+# Nettoyer les tags de direction
+tag @s remove facing_south
+tag @s remove facing_west
+tag @s remove facing_north
+tag @s remove facing_east
