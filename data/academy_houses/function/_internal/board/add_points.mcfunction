@@ -2,7 +2,7 @@
 #Avant d'appeler cette fonction il faut définir le nombre de points à ajouter via:
 #   /scoreboard players set @s houseDelta <nombre_de_points>
 #Et appeler la fonction via:
-#   /function academy_houses:board/add_points
+#   /function academy_houses:_internal/board/add_points
 
 # Sii le joueur n'a pas de maison, on sort
 execute unless score @s playerHouse matches 0..2 run return 0
@@ -19,13 +19,13 @@ execute if score @s playerHouse matches 1 run scoreboard players operation Carad
 execute if score @s playerHouse matches 2 run scoreboard players operation Bulbitard housePoints += @s houseDelta
 
 #On met à jour les affichages
-function academy_houses:board/compute_leader
-function academy_houses:board/compute_podium
+function academy_houses:_internal/board/compute_leader
+function academy_houses:_internal/board/compute_podium
 function academy_houses:board/update
 
 
 #Notifier le changement de classement
-function academy_houses:notifier/leaderboard_changed
+function academy_houses:_internal/notifier/leaderboard_changed
 
 # Remise à 0 de houseDelta
 scoreboard players set @s houseDelta 0

@@ -7,4 +7,4 @@ summon text_display ~ ~1.8 ~ {text:'{"text":"💧 Caradaigle","color":"blue","bo
 
 summon text_display ~ ~1.5 ~ {text:'{"text":"🌿 Bulbitard","color":"green","bold":true}',alignment:center,Tags:["houseBoard","detailed","Bulbitard"],Rotation:[180.0f,0.0f]}
 
-function academy_houses:board/update/detailed
+function academy_houses:_internal/board/update/detailed

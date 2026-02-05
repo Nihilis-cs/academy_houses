@@ -7,4 +7,4 @@ summon text_display ~ ~1.7 ~ {text:'{"text":"🥈 ---","color":"white"}',alignme
 
 summon text_display ~ ~1.4 ~ {text:'{"text":"🥉 ---","color":"white"}',alignment:center,Tags:["houseBoard","podium","podium_3"],Rotation:[270.0f,0.0f]}
 
-function academy_houses:board/update/podium
+function academy_houses:_internal/board/update/podium

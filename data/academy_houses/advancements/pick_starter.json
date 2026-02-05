@@ -5,6 +5,6 @@
         }
     },
     "rewards": {
-        "function": "academy_houses:assign/assign"
+        "function": "academy_houses:_internal/assign/assign"
     }
 }

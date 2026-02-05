@@ -1,5 +1,5 @@
 # Recalculer la population des maisons
-function academy_houses:util/count_house_population
+function academy_houses:_internal/util/count_house_population
 
 # 1. Trouver la population minimale
 scoreboard players operation #min tmp = Salador housePopulation
@@ -46,6 +46,6 @@ tag @s remove Bulbitard
 
 # 6. Assignation finale
 
-execute if score @s playerHouse matches 0 run function academy_houses:assign/fire
-execute if score @s playerHouse matches 1 run function academy_houses:assign/water
-execute if score @s playerHouse matches 2 run function academy_houses:assign/grass
+execute if score @s playerHouse matches 0 run function academy_houses:_internal/assign/fire
+execute if score @s playerHouse matches 1 run function academy_houses:_internal/assign/water
+execute if score @s playerHouse matches 2 run function academy_houses:_internal/assign/grass

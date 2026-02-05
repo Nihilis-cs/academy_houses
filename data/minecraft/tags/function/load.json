@@ -1,5 +1,5 @@
 {
     "values": [
-        "academy_houses:load"
+        "academy_houses:_internal/load"
     ]
 }

@@ -1,4 +1,4 @@
-function academy_houses:util/init_teams
+function academy_houses:_internal/util/init_teams
 
 scoreboard objectives add housePoints dummy
 scoreboard objectives add housePopulation dummy

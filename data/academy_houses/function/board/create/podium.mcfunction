@@ -1,5 +1,5 @@
 # Déterminer la direction du joueur
-function academy_houses:util/get_direction
+function academy_houses:_internal/util/get_direction
 
 # Créer le board dans la bonne orientation
 execute if entity @s[tag=facing_south] run function academy_houses:board/create/podium_south
