@@ -14,8 +14,18 @@ scoreboard objectives add random dummy
 #Servira de variable pour les ajouts de points aux maison
 scoreboard objectives add houseDelta dummy
 
-# Initialiser les constantes pour les calculs
+# Timer pour la mise à jour automatique des boards individuels
+scoreboard objectives add updateTimer dummy
+
+# Initialiser les constantes pour les calculs 
 scoreboard players set #360 tmp 36000
+# Pour recalculer l'affichage kikimeter, 6000 ticks = 5 minutes, 360 ticks = 30 secondes, 100 ticks = 5 secondes
+scoreboard players set #updateInterval updateTimer 360
+
+# Scoreboards pour les statistiques individuelles (Cobblemon Scoremons)
+scoreboard objectives add registered minecraft.custom:scoremons.pokemon_registered
+scoreboard objectives add shiny_caught minecraft.custom:scoremons.shiny_pokemon_caught
+scoreboard objectives add battle_won minecraft.custom:scoremons.battle_won
 
 # Créer les joueurs "virtuels" si absents
 execute unless score Salador housePoints matches 0.. run scoreboard players set Salador housePoints 0
