@@ -19,8 +19,8 @@ scoreboard objectives add updateTimer dummy
 
 # Initialiser les constantes pour les calculs 
 scoreboard players set #360 tmp 36000
-# Pour recalculer l'affichage kikimeter, 6000 ticks = 5 minutes, 360 ticks = 30 secondes, 100 ticks = 5 secondes
-scoreboard players set #updateInterval updateTimer 360
+# Pour recalculer l'affichage kikimeter, 7200 ticks = 5 minutes, 600 ticks = 30 secondes, 100 ticks = 5 secondes, 3600 = 3 minutes
+scoreboard players set #updateInterval updateTimer 3600
 
 # Scoreboards pour les statistiques individuelles (Cobblemon Scoremons)
 scoreboard objectives add registered minecraft.custom:scoremons.pokemon_registered
