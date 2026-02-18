@@ -1,6 +1,11 @@
 # Calculer les classements individuels pour les différentes statistiques
 # Cette fonction est appelée avant la mise à jour des boards
 
+# Initialiser le storage pour les classements persistants
+data remove storage academy_houses:rankings registered
+data remove storage academy_houses:rankings shiny  
+data remove storage academy_houses:rankings battle
+
 # Nettoyer les tags de classement précédents
 tag @a remove rank1_registered
 tag @a remove rank2_registered
@@ -30,11 +35,14 @@ tag @a remove rank3_battle
 tag @a remove rank4_battle
 tag @a remove rank5_battle
 
-# Calculer les classements pour les Pokemon enregistrés
+# Nettoyer les tags temporaires
+tag @a remove already_ranked
+
+# Calculer les classements pour les Pokemon enregistrés (avec sauvegarde automatique)
 function academy_houses:_internal/individual/rank_registered
 
-# Calculer les classements pour les Shiny capturés  
+# Calculer les classements pour les Shiny capturés (avec sauvegarde automatique)
 function academy_houses:_internal/individual/rank_shiny
 
-# Calculer les classements pour les combats gagnés
+# Calculer les classements pour les combats gagnés (avec sauvegarde automatique)
 function academy_houses:_internal/individual/rank_battle

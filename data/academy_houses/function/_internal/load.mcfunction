@@ -36,4 +36,11 @@ execute unless score Salador housePopulation matches 0.. run scoreboard players 
 execute unless score Caradaigle housePopulation matches 0.. run scoreboard players set Caradaigle housePopulation 0
 execute unless score Bulbitard housePopulation matches 0.. run scoreboard players set Bulbitard housePopulation 0
 
+# Initialisation du système de storage persistant pour les classements individuels
+data remove storage academy_houses:rankings
+data merge storage academy_houses:rankings {registered:{},shiny:{},battle:{}}
+
+# Première mise à jour des classements au démarrage
+function academy_houses:_internal/individual/compute_rankings
+
 say [Academy Houses] Initialized
