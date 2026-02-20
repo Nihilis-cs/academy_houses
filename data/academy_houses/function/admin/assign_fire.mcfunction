@@ -5,10 +5,11 @@
 tag @s remove Salador
 tag @s remove Caradaigle
 tag @s remove Bulbitard
-
+team leave @s
 # Assignation
 scoreboard players set @s playerHouse 0
 tag @s add Salador
+team join Salador @s
 
 # Message RP
 tellraw @s {"text":"🔥 Tu as été assigné à la maison Salador par l’Académie.","color":"red","bold":true}
